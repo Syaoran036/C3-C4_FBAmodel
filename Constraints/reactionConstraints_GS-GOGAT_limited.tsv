@@ -1,0 +1,78 @@
+reactionID	lb	ub	comment
+Ex1_b	0	0	CO2_ext =  CO2_cb; no CO2 uptake from Buddle; CO2 out to vascular parenchima
+Ex3_b	0	0	CHANGED constrain O2 exchange for the bs, no contact to intercellular space!
+Ex8	0	0	"Glucose_ext , Mesophyll"
+Ex12_b	0.4	0.4	CHANGED 24 09 13 test rate=0.056 to Vascular Parenchyma; Sucrose_c =  Sucrose_ext (Allow sucrose translocation to vascular tissue)
+Ex8_b	0	0	"Glucose_ext input, Bundle"
+Ex5	0	0	ADDED constrain NH3 uptake
+Ex5_b	0	0	ADDED constrain NH3 uptake
+FA	0	1000	CHANGED  constrain Fatty Acids to production-only (in Mesophyll)
+FA_b	0	1000	CHANGED constrain Fatty Acids to production-only (in BS)
+St01	0	1000	CHANGED constrain Starch to production-only, total Starch accumulated in leave
+Bc4	0	0	Block starch in M
+TMB09	-1000	1000	CHANGED Block Aspartate trasport though plasmodesmata
+TMB10	-1000	1000	CHANGED Block Alanine trasport though plasmodesmata
+TMB11	0	0	Block CO2 leakage from BS
+TMB12	-1000	1000	CHANGED Block O2 leakage from BS
+TMB13	0	0	Block PEP transport though plasmodesmata
+TMBglu	-1000	1000	ADDED block plasmodesmal Glutamte transport
+TMBgln	0	0	ADDED block plasmodesmal Glutamine transport
+TMBasn	0	0	ADDED block plasmodesmal Asparagine transport
+TMBthr	0	0	ADDED block plasmodesmal Threonine transport
+TMBaKG	-1000	1000	ADDED block plasmodesmal aKG transport
+TMB02	-1000	1000	ADDED block plasmodesmal Pyruvate transport
+R00214_mb	0	0	decarboxylation step; NAD-ME type
+R00341_c	0	0	descarboxilation step; PEPCK subtype
+R00341_cb	0	0	CHANGED to bundle sheath reaction!, descarboxilation step; PEPCK subtype
+R00216_p	0	0.01	down regulate decarboxilation in M
+R00132N_m	0	0	carbonic anhydrase mito, low enzyme activity in this organelle
+R00132N_cb	0	0	carbonic anhydrase cyto bs, low enzyme activity in this organelle
+R00132N_mb	0	0	carbonic anhydrase mito bs, low enzyme activity in this organelle
+R00345_cb	-1000	0	CHANGED 06-11-13 PEPC, Enzyme absent in Bundle
+R00345_c	-1000	0	PEPC, Correct reversibility to fix carbon
+R00344_c	0	0	Allow flux through PEPcase. This reaction doesnt consume ATP
+R00216_cb	0	0	NADP ME cyto bs limit flux in cytosol. High activity in chloroplast BS
+R00086_c	0	1000	ATP hydrolysis
+R00086_cb	0	1000	ATP hydrolysis
+R00235N_pb	0	0	Test ACETATE Bypass
+R00235N_p	0	0	Test ACETATE Bypass
+R00235N_c	0	0	Test ACETATE Bypass
+R00235N_cb	0	0	Test ACETATE Bypass
+R00235N_cb	0	0	Test ACETATE Bypass
+R00235N_xb	0	0	Test ACETATE Bypass
+TCM1_b	-10	10	mitochondrial membrane transport of pyruvate, Constrain cyclic fluxes
+TCM1	-10	10	Constrain cyclic fluxes
+R00343_m	0	0	NADPME, Constrain Isoenzymes
+R00343_mb	0	0	Constrain Isoenzymes
+R00267_m	0	0	isocitrate dehydrogenase, Constrain Isoenzymes
+R00267_mb	0	0	Constrain Isoenzymes
+R00472_x	0	1000	Correct reversibility 
+R00472_xb	0	1000	Correct reversibility 
+TCM22	-1000	1000	down regulation; glutamine transp. mitoch - Mesophyll
+TCM22_b	-1000	1000	down regulation; stop glutamine transp. mitoch - Bundle
+TCP27	-1000	1000	down regulation; stop glutamine chloroplast - Mesophyll
+TCP27_b	-1000	1000	down regulation; stop glutamine chloroplast - Bundle
+R00149_p	0	0	carbamoyl-P syn in plastid - Mesophyll
+R00149_pb	0	0	carbamoyl-P syn in plastid - Bundle
+R01398_c	0	0	Down regulation: citrulline–ornithine shuttle between mitochondria and plastids
+R01398_cb	0	0	Down regulation: citrulline–ornithine shuttle between mitochondria and plastids
+R00243_c	0	1000	CHANGED Reversibility; Isoenzymes glutamate dehydrogenase (1.4.1.3) 
+R00243_m	0	1000	CHANGED Reversibility; Isoenzymes glutamate dehydrogenase (1.4.1.3) 
+R00253_p	0	1000	CHANGED Reversibility; isoenzymes Glutamine synthetase (6.3.1.2) 
+R00253_m	0	1000	CHANGED Reversibility; isozenzymes Glutamine synthetase (6.3.1.2)
+R00253_c	0	1000	ADDED 060913  Reversibility; isozenzymes Glutamine synthetase (6.3.1.2)
+R00243_cb	0	1000	ADDED Reversibility; Isoenzymes glutamate dehydrogenase (1.4.1.3) 
+R00243_mb	0	1000	ADDED Reversibility; Isoenzymes glutamate dehydrogenase (1.4.1.3) 
+R00253_pb	0	1000	ADDED Reversibility; isoenzymes Glutamine synthetase (6.3.1.2) 
+R00253_mb	0	1000	ADDED Reversibility; isozenzymes Glutamine synthetase (6.3.1.2)
+R00253_cb	0	1000	ADDED 060913 Reversibility; isozenzymes Glutamine synthetase (6.3.1.2)
+R00847_c	0	0	constrain high flux caused by singleton
+R00847_cb	0	0	constrain high flux caused by singleton
+R00021_p	2	2	GluS_Fd-dep_p
+R00021_pb	2	2	GluS_Fd-dep_pb
+R00114_c	0	0	GluS_NADPH_dep_c
+R00114_cb	0	0	GluS_NADPH_dep_cb
+R00093_p	0	0	GluS_NADH_dep_p
+R00093_pb	0	0	GluS_NADH_dep_pb
+R00709_m	1	1	IDH
+R00709_mb	1	1	IDH
