@@ -1,5 +1,5 @@
 ## C3-C4 FBA model
-A C3-C4 intermediates flux balance model modified based on a published genome-scale constraint-based model of C3–C4 photosynthesis (Dal'Molin et al., 2010, Mallmann et al., 2014), which parameterized based on the physiological parameters collected in (Heckmann et al., 2013)
+This is the code for a flux balance model of C3-C4 intermediates, which was originally based on a published genome-scale constraint-based model of C3-C4 photosynthesis (Dal'Molin et al., 2010; Mallmann et al., 2014). This model was parameterized using the physiological parameters collected in Heckmann et al. (2013). The updated model was then utilized to simulate changes in metabolic flux when the Fd-GOGAT flux is limited.
 
 ## Dependency
 - R 3.5
